@@ -1,0 +1,12 @@
+^.*?(?=^[A-Z]) - przed du¿¹ litera znak 
+
+^[0-9]{1,2}\; - Szukany
+\t$0 - zmiana
+
+Dodaje do listy tabulator
+
+(?=([0-9]{1,2}))?\.\s - zaznaczamy kropke i spacjê po liczbie jedno lub dwu cyfrowej
+
+^(?!PROG.*).*\r?\n? - wypisuje wszystkie wiersze zaczynaj¹ce siê od prog
+
+^(?![A-Z][0-9])(?!PROG.*).*\r?\n? - wybiera te linnie które nie maj¹ na pocz¹tku du¿ej litery i cyfry i PROG
