@@ -1,12 +1,12 @@
-^.*?(?=^[A-Z]) - przed duøπ litera znak 
+^.*?(?=^[A-Z]) - przed du≈º≈° litera znak 
 
-^[0-9]{1,2}\; - Szukany
+(^[0-9]{1,2}\;).*$ - Szukany
 \t$0 - zmiana
 
 Dodaje do listy tabulator
 
-(?=([0-9]{1,2}))?\.\s - zaznaczamy kropke i spacjÍ po liczbie jedno lub dwu cyfrowej
+(?=([0-9]{1,2}))?\.\s - zaznaczamy kropke i spacjƒô po liczbie jedno lub dwu cyfrowej
 
-^(?!PROG.*).*\r?\n? - wypisuje wszystkie wiersze zaczynajπce siÍ od prog
+^(?!PROG.*).*\r?\n? - wypisuje wszystkie wiersze zaczynaj≈°ce siƒô od prog
 
-^(?![A-Z][0-9])(?!PROG.*).*\r?\n? - wybiera te linnie ktÛre nie majπ na poczπtku duøej litery i cyfry i PROG
+^(?![A-Z][0-9])(?!PROG.*).*\r?\n? - wybiera te linnie kt√≥re nie maj≈° na pocz≈°tku du≈ºej litery i cyfry i PROG
