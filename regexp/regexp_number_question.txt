@@ -1,0 +1,15 @@
+// Example
+S2. Wiek respondenta PROG.: Kwota zgodnie z rozkładem w populacji internautów.
+S2a. Wiek respondenta PROG.: Kwota zgodnie z rozkładem w populacji internautów.
+S2B. Wiek respondenta PROG.: Kwota zgodnie z rozkładem w populacji internautów.
+
+// Result
+[S2]Wiek respondenta PROG.: Kwota zgodnie z rozkładem w populacji internautów.
+[S2a]Wiek respondenta PROG.: Kwota zgodnie z rozkładem w populacji internautów.
+[S2B]Wiek respondenta PROG.: Kwota zgodnie z rozkładem w populacji internautów.
+
+// regexp
+
+find: ^([A-Z][0-9]{1,3}(\w)?)\.\s
+replace: [$1]
+
