@@ -1,0 +1,32 @@
+// Example
+
+1 – poniżej podstawowego
+2 – podstawowe
+3 – gimnazjalne
+4 – zasadnicze
+5 – niepełne średnie
+6 – średnie
+7 – pomaturalne
+8 – licencjat, inżynierskie
+9 – magisterskie
+10 – podyplomowe, MBA
+11 – doktorat lub wyższe
+
+// Result
+
+1;poniżej podstawowego
+2;podstawowe
+3;gimnazjalne
+4;zasadnicze
+5;niepełne średnie
+6;średnie
+7;pomaturalne
+8;licencjat, inżynierskie
+9;magisterskie
+10;podyplomowe, MBA
+11;doktorat lub wyższe
+
+// Regexp
+
+Find: (?=([0-9]{1,3}))?((\s+)–(\s+))
+Replace: ;
