@@ -7,4 +7,4 @@ aaa$S9_3_blank <- amatch(aaa$blank_adult.3.text,x,maxDist=2)
 
 aaa$S10_1_blank <- amatch(aaa$blank_kids.1.text,y,maxDist=2)
 aaa$S10_2_blank <- amatch(aaa$blank_kids.2.text,y,maxDist=2)
-aaa$S19_3_blank <- amatch(aaa$blank_kids.3.text,y,maxDist=2)
+aaa$S10_3_blank <- amatch(aaa$blank_kids.3.text,y,maxDist=2)
