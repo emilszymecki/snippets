@@ -25,7 +25,7 @@ macro +="WAIT SECONDS=2"+"\n";
 
 for(var i = 0; i<arr.length; i++){
 	survey = 126;
-	id = x[i];
+	id = arr[i];
 	
     iimSet("SURVEY", survey);
     iimSet("ID", id);
