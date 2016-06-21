@@ -48,17 +48,17 @@ macro +="TAG POS=1 TYPE=INPUT:TEXT FORM=ID:QuoteNewQuoteForm ATTR=ID:QuoteName C
 macro +="TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:QuoteNewQuoteForm ATTR=*"+"\n";
 macro +="WAIT SECONDS=2"+"\n";
 
-
-for (i = 0; i <= 35; i++) {
-    names = Object.keys(x)[i];
-    count = x[Object.keys(x)[i]];
-
+for(i in x){
+	names = i;
+	count = x[i];
+	
     iimSet("COUNT", count)
     iimSet("NAMES", names)
 
 
 iimPlay(macro);
-
+	
 }
+
 
 iimDisplay("Script completed.");
