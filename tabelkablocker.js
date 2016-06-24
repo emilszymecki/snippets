@@ -17,16 +17,18 @@ $(".page-name-"+name+" .answer").on("change",function(e){
       deactive.attr('disabled',false);
     }
     
+});
+
     $(".page-name-"+name+" .answer").parents(".col-"+block).find(".answer").on("change",function(x){
     	 $(this).parents("tr").find(".answer").attr("disabled",false);
 	    if($(this).is(":checked")){
 	      $(this).parents("tr").find(".clickTd:not(.col-"+block+")").find(".answer").prop( "checked", false );
 	      $(this).parents("tr").find(".clickTd:not(.col-"+block+")").find(".answer").attr("disabled",true).hide();
+	      $(this).parents("tr").find(".clickTd:not(.col-"+block+")").append('<span class="glyphicon glyphicon-remove"></span>');
 	    }else{
+	    	$(this).parents("tr").find(".clickTd:not(.col-"+block+")").find(".glyphicon-remove").hide();
 	      $(this).parents("tr").find(".clickTd:not(.col-"+block+")").find(".answer").show();
 	    }
 		});
-
-});
 
 }
