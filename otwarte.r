@@ -5,7 +5,7 @@ normalizuj <- function(name,filtr){
     for(i in 1:nrow(name)){
         for(j in 1:ncol(name)){
             x <- tolower(as.character(name[i,j]))
-           if(!is.na(x)){
+           if(x != ''){
                 y <- amatch(x,filtr,maxDist=2,matchNA = FALSE,nomatch = 0)
                 if(y != 0){
                     w<- filtr[y]
