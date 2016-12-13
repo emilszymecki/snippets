@@ -45,3 +45,13 @@ function blockColRoW(colrow,limitblk,el){ // parametry colrow:"col"albo"row"|lim
 	 blockColRoW(colrow,limitblk,el);
 
 }
+
+//przykład 
+
+Survey.bind('O3_E','page','before',function(s,pi,po){ 
+    
+    limitColRow(po,"row",2,3);
+    limitColRow(po,"row",1,1);
+    
+      
+	});	
