@@ -1,16 +1,24 @@
-for(b in 1:nrow(AGITO)){
-    label <- c(AGITO[b,"U1"],AGITO[b,"U2"],AGITO[b,"U3"],AGITO[b,"U4"],AGITO[b,"U5"])
+for(b in 1:nrow(AGITO2)){
+    label <- c(AGITO2[b,"U1"],AGITO2[b,"U2"],AGITO2[b,"U3"],AGITO2[b,"U4"],AGITO2[b,"U5"])
     for(a in 1:34){
+        z <- which(label == a)
         for(i in 1:length(Colnazwy)){
             nazwa <- gsub("w",a,Colnazwy[i])
-            if(a %in% label && !is.na(label[a])){
-                y[b,nazwa] <- AGITO[b,nazwa]
+            if(!is.integer0(z)){nazwa2 <- gsub("w",z,Colnazwy[i])}
+            if(a %in% label){
+                cat(nazwa,nazwa2,"\n")
+                y[b,nazwa] <- AGITO2[b,nazwa2]
             }else{
                 y[b,nazwa] <- NA
             }
         }  
     }
     
+}
+
+function(x)
+{
+    is.integer(x) && length(x) == 0L
 }
 
 Colnazwy <- c('Q4_w'
@@ -85,3 +93,6 @@ Colnazwy <- c('Q4_w'
 ,'Q9_w.215'
 ,'Q9_w.999'
 ,'Q9_w.999.text')
+
+
+// poprawka do poprawki 
