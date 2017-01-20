@@ -1,5 +1,4 @@
-> label <- c("garnki","patelnie","zestawy",
-+            "szklo","sztucce","noze","naczynia")
+> label <- c("garnki","patelnie","zestawy","szklo","sztucce","noze","naczynia")
 > Beeline$Kat <- cut(Beeline$Marka1, breaks = c(0,1,6,11,16,20,23,27),labels = label) # Tworzę nową kolumnę z kategoriami względem N'ek z kol Marki1
                        
         
