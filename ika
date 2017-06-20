@@ -1,0 +1,12 @@
+ika <- function(zmienna,kolumna){
+    library(dplyr)
+    x <- zmienna[[kolumna]]
+    abc <- data.frame()
+    for(o in 1:length(x)){
+        abc[o,paste(kolumna,x[o],sep = ".")] <- 1
+    }
+    abc[is.na(abc)] <- 0
+    abc <- abc[,order(colnames(abc))]
+    write.csv2(abc,paste(toString(kolumna),".csv"))
+    return(abc)
+}
