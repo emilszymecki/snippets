@@ -12,3 +12,22 @@ normal_table <- function(kolumna){
     }
     return(tabelka)
 }
+/*
+Survey.bind('TXT','page','relevance',function(s,pi,po){ 
+
+var tmp = $('.page-name-A3').find('.answer').toArray().map(function(a){
+    var row = $(a).parents('tr').getValueN(),
+   		col = $(a).parents('td').attr('class').match(/\bcol-\S+/g)[0].split('-')[1],
+		val = $(a).is(':checked') ? 1:0,
+		vis = $(a).is(':visible') ? val:NaN,
+		label = ['A3'+"-"+row+"-"+col]
+		return [label+"_"+vis]
+
+}).toString()
+
+console.log(tmp)
+
+$(po).find('textarea').val(tmp).trigger('change')
+
+});
+*/
