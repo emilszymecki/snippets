@@ -1,3 +1,4 @@
+/* ES6
 const powerset = (array) => { // O(2^n)
 	const results = [[]];
 	for (const value of array) {
@@ -8,6 +9,23 @@ const powerset = (array) => { // O(2^n)
 	}
 	return results;
 };
+*/
+
+function powerset(array) {
+
+    function fork(i, t) {
+        if (i === array.length) {
+            result.push(t);
+            return;
+        }
+        fork(i + 1, t.concat([array[i]]));
+        fork(i + 1, t);
+    }
+
+    var result = [];
+    fork(0, []);
+    return result;
+}
 
 const objSet = {
 	"a":{name: "a", val:1},
@@ -48,7 +66,7 @@ var aggregate = cmb2.map(function(a){
 })
 
 var flt_aggregate = aggregate.filter(function(a,b){
-	return a[1] == 20
+	return a[1] == 21
 })
 
 console.log(flt_aggregate)
