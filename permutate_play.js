@@ -47,4 +47,8 @@ var aggregate = cmb2.map(function(a){
 	return [name,arrValSum]
 })
 
-console.log(aggregate)
+var flt_aggregate = aggregate.filter(function(a,b){
+	return a[1] == 20
+})
+
+console.log(flt_aggregate)
