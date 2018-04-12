@@ -1,100 +1,434 @@
 SZYBKI_TEST <- c(
-"A1"
-,"A2a"
-,"A2b.1"
-,"A2b.1.text"
-,"A2b.2"
-,"A2b.2.text"
-,"A2d.1"
-,"A2d.1.text"
-,"A2e.1"
-,"A2e.1.text"
-,"A2e.2"
-,"A2e.2.text"
-,"A2f.1"
-,"A2f.1.text"
-,"A2f.2"
-,"A2f.2.text"
+    "A1"
+    ,"A2a"
+    ,"A2b.1"
+    ,"A2b.1.text"
+    ,"A2b.2"
+    ,"A2b.2.text"
+    ,"A2d.1"
+    ,"A2d.1.text"
+    ,"A2e.1"
+    ,"A2e.1.text"
+    ,"A2e.2"
+    ,"A2e.2.text"
+    ,"A2f.1"
+    ,"A2f.1.text"
+    ,"A2f.2"
+    ,"A2f.2.text"
 )
 MODUL_1 <- c(
-"A5c_1"
-,"A4c.1"
-,"A4c.1.text"
-,"A4b.1"
-,"A4b.1.text"
-,"A4b.2"
-,"A4b.2.text"
-,"A5a_1"
-,"A4e.1"
-,"A4e.1.text"
-,"A4e.2"
-,"A4e.2.text"
-,"A5h_1"
-,"A4f.1"
-,"A4f.1.text"
-,"A4f.2"
-,"A4f.2.text"
-,"A5b_1"
-,"A5d_1"
-,"A5e_1"
-,"A5f_1"
-,"A5g_1"
+    "A5c_1"
+    ,"A4c.1"
+    ,"A4c.1.text"
+    ,"A4b.1"
+    ,"A4b.1.text"
+    ,"A4b.2"
+    ,"A4b.2.text"
+    ,"A5a_1"
+    ,"A4e.1"
+    ,"A4e.1.text"
+    ,"A4e.2"
+    ,"A4e.2.text"
+    ,"A5h_1"
+    ,"A4f.1"
+    ,"A4f.1.text"
+    ,"A4f.2"
+    ,"A4f.2.text"
+    ,"A5b_1"
+    ,"A5d_1"
+    ,"A5e_1"
+    ,"A5f_1"
+    ,"A5g_1"
 )
 MODUL_2 <- c(
-"A5c_2"
-,"A5a_2"
-,"A5b_2"
-,"A5h_2"
-,"A5d_2"
-,"A5e_2"
-,"A5f_2"
-,"A5g_2"
+    "A5c_2"
+    ,"A5a_2"
+    ,"A5b_2"
+    ,"A5h_2"
+    ,"A5d_2"
+    ,"A5e_2"
+    ,"A5f_2"
+    ,"A5g_2"
 )
 MODUL_3 <- c(
-"A5c_3"
-,"A5a_3"
-,"A5b_3"
-,"A5h_3"
-,"A5d_3"
-,"A5e_3"
-,"A5f_3"
-,"A5g_3"
+    "A5c_3"
+    ,"A5a_3"
+    ,"A5b_3"
+    ,"A5h_3"
+    ,"A5d_3"
+    ,"A5e_3"
+    ,"A5f_3"
+    ,"A5g_3"
 )
 
 CZYT <- c(
-'A1_B1_B2_B3',
-'A1_B1_B3_B2',
-'A2_B2_B1_B3',
-'A2_B2_B3_B1',
-'A3_B3_B1_B2',
-'A3_B3_B2_B1',
-'B1_A1_A2_A3',
-'B1_A1_A3_A2',
-'B2_A2_A1_A3',
-'B2_A2_A3_A1',
-'B3_A3_A1_A2',
-'B3_A3_A2_A1'  
+    'A1_B1_B2_B3',
+    'A1_B1_B3_B2',
+    'A2_B2_B1_B3',
+    'A2_B2_B3_B1',
+    'A3_B3_B1_B2',
+    'A3_B3_B2_B1',
+    'B1_A1_A2_A3',
+    'B1_A1_A3_A2',
+    'B2_A2_A1_A3',
+    'B2_A2_A3_A1',
+    'B3_A3_A1_A2',
+    'B3_A3_A2_A1'  
 )
 
+KOLEJNOSC<- c('id',
+'rot',
+'decodeROT',
+'1_A1_A1',
+'1_A1_A2',
+'1_A1_A3',
+'1_A1_B1',
+'1_A1_B2',
+'1_A1_B3',
+'2_A2a_A1',
+'2_A2a_A2',
+'2_A2a_A3',
+'2_A2a_B1',
+'2_A2a_B2',
+'2_A2a_B3',
+'3_A2b.1_A1',
+'3_A2b.1_A2',
+'3_A2b.1_A3',
+'3_A2b.1_B1',
+'3_A2b.1_B2',
+'3_A2b.1_B3',
+'4_A2b.1.text_A1',
+'4_A2b.1.text_A2',
+'4_A2b.1.text_A3',
+'4_A2b.1.text_B1',
+'4_A2b.1.text_B2',
+'4_A2b.1.text_B3',
+'5_A2b.2_A1',
+'5_A2b.2_A2',
+'5_A2b.2_A3',
+'5_A2b.2_B1',
+'5_A2b.2_B2',
+'5_A2b.2_B3',
+'6_A2b.2.text_A1',
+'6_A2b.2.text_A2',
+'6_A2b.2.text_A3',
+'6_A2b.2.text_B1',
+'6_A2b.2.text_B2',
+'6_A2b.2.text_B3',
+'7_A2d.1_A1',
+'7_A2d.1_A2',
+'7_A2d.1_A3',
+'7_A2d.1_B1',
+'7_A2d.1_B2',
+'7_A2d.1_B3',
+'8_A2d.1.text_A1',
+'8_A2d.1.text_A2',
+'8_A2d.1.text_A3',
+'8_A2d.1.text_B1',
+'8_A2d.1.text_B2',
+'8_A2d.1.text_B3',
+'9_A2e.1_A1',
+'9_A2e.1_A2',
+'9_A2e.1_A3',
+'9_A2e.1_B1',
+'9_A2e.1_B2',
+'9_A2e.1_B3',
+'10_A2e.1.text_A1',
+'10_A2e.1.text_A2',
+'10_A2e.1.text_A3',
+'10_A2e.1.text_B1',
+'10_A2e.1.text_B2',
+'10_A2e.1.text_B3',
+'11_A2e.2_A1',
+'11_A2e.2_A2',
+'11_A2e.2_A3',
+'11_A2e.2_B1',
+'11_A2e.2_B2',
+'11_A2e.2_B3',
+'12_A2e.2.text_A1',
+'12_A2e.2.text_A2',
+'12_A2e.2.text_A3',
+'12_A2e.2.text_B1',
+'12_A2e.2.text_B2',
+'12_A2e.2.text_B3',
+'13_A2f.1_A1',
+'13_A2f.1_A2',
+'13_A2f.1_A3',
+'13_A2f.1_B1',
+'13_A2f.1_B2',
+'13_A2f.1_B3',
+'14_A2f.1.text_A1',
+'14_A2f.1.text_A2',
+'14_A2f.1.text_A3',
+'14_A2f.1.text_B1',
+'14_A2f.1.text_B2',
+'14_A2f.1.text_B3',
+'15_A2f.2_A1',
+'15_A2f.2_A2',
+'15_A2f.2_A3',
+'15_A2f.2_B1',
+'15_A2f.2_B2',
+'15_A2f.2_B3',
+'16_A2f.2.text_A1',
+'16_A2f.2.text_A2',
+'16_A2f.2.text_A3',
+'16_A2f.2.text_B1',
+'16_A2f.2.text_B2',
+'16_A2f.2.text_B3',
+'17_A5c_1_A1',
+'17_A5c_1_A2',
+'17_A5c_1_A3',
+'17_A5c_1_B1',
+'17_A5c_1_B2',
+'17_A5c_1_B3',
+'18_A4c.1_A1',
+'18_A4c.1_A2',
+'18_A4c.1_A3',
+'18_A4c.1_B1',
+'18_A4c.1_B2',
+'18_A4c.1_B3',
+'19_A4c.1.text_A1',
+'19_A4c.1.text_A2',
+'19_A4c.1.text_A3',
+'19_A4c.1.text_B1',
+'19_A4c.1.text_B2',
+'19_A4c.1.text_B3',
+'20_A4b.1_A1',
+'20_A4b.1_A2',
+'20_A4b.1_A3',
+'20_A4b.1_B1',
+'20_A4b.1_B2',
+'20_A4b.1_B3',
+'21_A4b.1.text_A1',
+'21_A4b.1.text_A2',
+'21_A4b.1.text_A3',
+'21_A4b.1.text_B1',
+'21_A4b.1.text_B2',
+'21_A4b.1.text_B3',
+'22_A4b.2_A1',
+'22_A4b.2_A2',
+'22_A4b.2_A3',
+'22_A4b.2_B1',
+'22_A4b.2_B2',
+'22_A4b.2_B3',
+'23_A4b.2.text_A1',
+'23_A4b.2.text_A2',
+'23_A4b.2.text_A3',
+'23_A4b.2.text_B1',
+'23_A4b.2.text_B2',
+'23_A4b.2.text_B3',
+'24_A5a_1_A1',
+'24_A5a_1_A2',
+'24_A5a_1_A3',
+'24_A5a_1_B1',
+'24_A5a_1_B2',
+'24_A5a_1_B3',
+'25_A4e.1_A1',
+'25_A4e.1_A2',
+'25_A4e.1_A3',
+'25_A4e.1_B1',
+'25_A4e.1_B2',
+'25_A4e.1_B3',
+'26_A4e.1.text_A1',
+'26_A4e.1.text_A2',
+'26_A4e.1.text_A3',
+'26_A4e.1.text_B1',
+'26_A4e.1.text_B2',
+'26_A4e.1.text_B3',
+'27_A4e.2_A1',
+'27_A4e.2_A2',
+'27_A4e.2_A3',
+'27_A4e.2_B1',
+'27_A4e.2_B2',
+'27_A4e.2_B3',
+'28_A4e.2.text_A1',
+'28_A4e.2.text_A2',
+'28_A4e.2.text_A3',
+'28_A4e.2.text_B1',
+'28_A4e.2.text_B2',
+'28_A4e.2.text_B3',
+'29_A5h_1_A1',
+'29_A5h_1_A2',
+'29_A5h_1_A3',
+'29_A5h_1_B1',
+'29_A5h_1_B2',
+'29_A5h_1_B3',
+'30_A4f.1_A1',
+'30_A4f.1_A2',
+'30_A4f.1_A3',
+'30_A4f.1_B1',
+'30_A4f.1_B2',
+'30_A4f.1_B3',
+'31_A4f.1.text_A1',
+'31_A4f.1.text_A2',
+'31_A4f.1.text_A3',
+'31_A4f.1.text_B1',
+'31_A4f.1.text_B2',
+'31_A4f.1.text_B3',
+'32_A4f.2_A1',
+'32_A4f.2_A2',
+'32_A4f.2_A3',
+'32_A4f.2_B1',
+'32_A4f.2_B2',
+'32_A4f.2_B3',
+'33_A4f.2.text_A1',
+'33_A4f.2.text_A2',
+'33_A4f.2.text_A3',
+'33_A4f.2.text_B1',
+'33_A4f.2.text_B2',
+'33_A4f.2.text_B3',
+'34_A5b_1_A1',
+'34_A5b_1_A2',
+'34_A5b_1_A3',
+'34_A5b_1_B1',
+'34_A5b_1_B2',
+'34_A5b_1_B3',
+'35_A5d_1_A1',
+'35_A5d_1_A2',
+'35_A5d_1_A3',
+'35_A5d_1_B1',
+'35_A5d_1_B2',
+'35_A5d_1_B3',
+'36_A5e_1_A1',
+'36_A5e_1_A2',
+'36_A5e_1_A3',
+'36_A5e_1_B1',
+'36_A5e_1_B2',
+'36_A5e_1_B3',
+'37_A5f_1_A1',
+'37_A5f_1_A2',
+'37_A5f_1_A3',
+'37_A5f_1_B1',
+'37_A5f_1_B2',
+'37_A5f_1_B3',
+'38_A5g_1_A1',
+'38_A5g_1_A2',
+'38_A5g_1_A3',
+'38_A5g_1_B1',
+'38_A5g_1_B2',
+'38_A5g_1_B3',
+'39_A5c_2_A1',
+'39_A5c_2_A2',
+'39_A5c_2_A3',
+'39_A5c_2_B1',
+'39_A5c_2_B2',
+'39_A5c_2_B3',
+'40_A5a_2_A1',
+'40_A5a_2_A2',
+'40_A5a_2_A3',
+'40_A5a_2_B1',
+'40_A5a_2_B2',
+'40_A5a_2_B3',
+'41_A5b_2_A1',
+'41_A5b_2_A2',
+'41_A5b_2_A3',
+'41_A5b_2_B1',
+'41_A5b_2_B2',
+'41_A5b_2_B3',
+'42_A5h_2_A1',
+'42_A5h_2_A2',
+'42_A5h_2_A3',
+'42_A5h_2_B1',
+'42_A5h_2_B2',
+'42_A5h_2_B3',
+'43_A5d_2_A1',
+'43_A5d_2_A2',
+'43_A5d_2_A3',
+'43_A5d_2_B1',
+'43_A5d_2_B2',
+'43_A5d_2_B3',
+'44_A5e_2_A1',
+'44_A5e_2_A2',
+'44_A5e_2_A3',
+'44_A5e_2_B1',
+'44_A5e_2_B2',
+'44_A5e_2_B3',
+'45_A5f_2_A1',
+'45_A5f_2_A2',
+'45_A5f_2_A3',
+'45_A5f_2_B1',
+'45_A5f_2_B2',
+'45_A5f_2_B3',
+'46_A5g_2_A1',
+'46_A5g_2_A2',
+'46_A5g_2_A3',
+'46_A5g_2_B1',
+'46_A5g_2_B2',
+'46_A5g_2_B3',
+'47_A5c_3_A1',
+'47_A5c_3_A2',
+'47_A5c_3_A3',
+'47_A5c_3_B1',
+'47_A5c_3_B2',
+'47_A5c_3_B3',
+'48_A5a_3_A1',
+'48_A5a_3_A2',
+'48_A5a_3_A3',
+'48_A5a_3_B1',
+'48_A5a_3_B2',
+'48_A5a_3_B3',
+'49_A5b_3_A1',
+'49_A5b_3_A2',
+'49_A5b_3_A3',
+'49_A5b_3_B1',
+'49_A5b_3_B2',
+'49_A5b_3_B3',
+'50_A5h_3_A1',
+'50_A5h_3_A2',
+'50_A5h_3_A3',
+'50_A5h_3_B1',
+'50_A5h_3_B2',
+'50_A5h_3_B3',
+'51_A5d_3_A1',
+'51_A5d_3_A2',
+'51_A5d_3_A3',
+'51_A5d_3_B1',
+'51_A5d_3_B2',
+'51_A5d_3_B3',
+'52_A5e_3_A1',
+'52_A5e_3_A2',
+'52_A5e_3_A3',
+'52_A5e_3_B1',
+'52_A5e_3_B2',
+'52_A5e_3_B3',
+'53_A5f_3_A1',
+'53_A5f_3_A2',
+'53_A5f_3_A3',
+'53_A5f_3_B1',
+'53_A5f_3_B2',
+'53_A5f_3_B3',
+'54_A5g_3_A1',
+'54_A5g_3_A2',
+'54_A5g_3_A3',
+'54_A5g_3_B1',
+'54_A5g_3_B2',
+'54_A5g_3_B3'
+)
+
+oldCONCAT <- c(SZYBKI_TEST,MODUL_1,MODUL_2,MODUL_3)
+ouput <- sapply(oldCONCAT, function(v) return(paste(which(oldCONCAT == v),v,sep="_")))
+oldCONCATNUMERIC <- unname(unlist(ouput))
 setDATA <- data.frame()
+
 for (i in 1:nrow(dataset)){
     splitVal <- unlist(strsplit(CZYT[dataset$PRE_ROT[i]], "_", fixed = FALSE))
-    newSZYBKI_TEST <- paste(SZYBKI_TEST, splitVal[1], sep="_")
-    newMODUL_1 <- paste(MODUL_1, splitVal[2], sep="_")
-    newMODUL_2 <- paste(MODUL_2, splitVal[3], sep="_")
-    newMODUL_3 <- paste(MODUL_3, splitVal[4], sep="_")
+    newSZYBKI_TEST <- paste(oldCONCATNUMERIC[1:16], splitVal[1], sep="_")
+    newMODUL_1 <- paste(oldCONCATNUMERIC[17:38], splitVal[2], sep="_")
+    newMODUL_2 <- paste(oldCONCATNUMERIC[39:46], splitVal[3], sep="_")
+    newMODUL_3 <- paste(oldCONCATNUMERIC[47:54], splitVal[4], sep="_")
     newCONCAT <- c(newSZYBKI_TEST,newMODUL_1,newMODUL_2,newMODUL_3)
-    oldCONCAT <- c(SZYBKI_TEST,MODUL_1,MODUL_2,MODUL_3)
     
     values <- unname(unlist(dataset[i,oldCONCAT]))
     
     setDATA[i,"id"] <- dataset$id[i]
     setDATA[i,"rot"] <- dataset$ROT[i]
     setDATA[i,"decodeROT"] <- CZYT[dataset$PRE_ROT[i]]
-        
+    
     for(j in 1:length(newCONCAT)){
         setNAME <- newCONCAT[j]
         setVAL <- values[j]
         setDATA[i,setNAME] <- setVAL
     }
 }
+
+sortDATA <- setDATA[,match(KOLEJNOSC, names(setDATA))]
